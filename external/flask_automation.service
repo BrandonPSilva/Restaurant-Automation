@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve flask_automation
+After=network.target
+
+[Service]
+User=control
+Group=www-data
+WorkingDirectory=/var/www/hqproject.dev/softwareengineeringii/
+Environment="PATH=/var/www/hqproject.dev/softwareengineeringii/venv/bin"
+ExecStart=/var/www/hqproject.dev/softwareengineeringii/venv/bin/uwsgi --ini /var/www/hqproject.dev/softwareengineeringii/flask_automation.ini
+
+[Install]
+WantedBy=multi-user.target

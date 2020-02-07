@@ -1,0 +1,24 @@
+body{
+            background-image: url(asdf.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+
+}
+
+.login-page{
+width: 500px;
+padding: 20%;
+margin: auto;
+}
+
+.form{
+    position: relative;
+    z-index:1;
+    background: #ffffff;
+    max-width: 350px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+
+}
